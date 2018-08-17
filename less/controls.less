@@ -1,0 +1,39 @@
+.clickable {
+    cursor : pointer;
+}
+
+.checkbox {
+    display : inline-block;
+
+    cursor : pointer;
+    &.checked {
+        color : @color__link__active;
+        .icon {
+            fill : @color__link__active;
+        }
+    }
+}
+.checkbox__additional-content {
+    display : inline-block;
+}
+.thumb-vertical {
+    background-color : @color__sidebar__border;
+}
+
+.btn {
+    padding : 10px 20px;
+
+    cursor : pointer;
+
+    color : @color__font__inverted;
+    border : none;
+    background-color : @color__sidebar__bg;
+    &:focus, &:hover {
+        outline : none;
+    }
+    &:hover {
+        color : @color__link__active;
+    }
+    &:active {
+    }
+}

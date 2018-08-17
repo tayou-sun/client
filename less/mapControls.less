@@ -1,0 +1,38 @@
+.map-controls {
+    position : fixed;
+    z-index : 2001;
+    top : @header__height + 10;
+    left : 12px;
+}
+
+.map-control {
+    position : relative;
+
+    display : inline-block;
+    overflow : hidden;
+
+    margin : 0;
+    padding : 6px;
+    padding : 10px;
+
+    cursor : pointer;
+    user-select : none;
+    transition : box-shadow .1s ease-out;
+    text-align : left;
+
+    border : 0;
+    outline : 0;
+    background-color : @color__header__main-from;
+    background-image : none;
+    box-shadow : 0 2px 6px 0 rgba(0, 0, 0, .36);
+    .icon {
+        transition : fill .4s cubic-bezier(.19, 1, .22, 1);
+
+        fill : @color__link;
+    }
+    &:hover {
+        .icon {
+            fill : @color__link__active;
+        }
+    }
+}

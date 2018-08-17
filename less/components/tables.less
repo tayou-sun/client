@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+
+  //border-spacing : none;
+
+  border: none;
+  border-collapse: collapse;
+
+  td {
+    padding: 2px 10px;
+  }
+  thead > tr > td {
+    background-color: #eee;
+
+    font-weight: bold;
+  }
+
+  &.striped {
+    tbody {
+      tr:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}

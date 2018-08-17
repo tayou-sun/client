@@ -1,0 +1,131 @@
+.configuratorPage {
+  padding: 20px;
+  .ReactTable {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    .rt-table {
+      .rt-tr-group {
+        cursor: auto;
+      }
+    }
+  }
+  .btn {
+    &_quitCtor {
+      padding: 4px 8px;
+      position: absolute;
+      right: 20px;
+      top: 50px;
+    }
+    &[disabled] {
+      background-color: #d0d0d0;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .form-group {
+    padding: 4px 0;
+    .Select-control {
+      width: 100%;
+    }
+  }
+}
+
+.loaderContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  //  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #6fdbe4;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-addForm {
+  position: fixed;
+}
+
+.cardsContainer {
+  margin: 0 20%;
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 40px;
+    padding: 10px;
+    &-title {
+      font-weight: bold;
+    }
+    &:hover {
+      box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.icon-check {
+  height: 20px;
+  width: 20px;
+}
+
+.modalForm {
+  &-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  &-content {
+    background-color: #fff;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-header {
+    color: #808080;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px;
+  }
+  &-body {
+    border-top: 1px solid #d0d0d0;
+    padding: 10px;
+    .Select-control {
+      width: 400px;
+    }
+  }
+  &-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
